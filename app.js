@@ -1,13 +1,10 @@
-textupdate("Kykkian, ", "Mbappé")
-function textupdate(prenom, nom) {
-
-    let element = document.getElementById("p1");
-    element.innerText = prenom + nom;
-    console.log("Hello" + "" +prenom + "" +nom);
-}
-text2("Lionel, ", "Messi");
-function text2(prenom2, nom2) {
-    let element2 = document.getElementById("p2");
-    element2.innerText = prenom2 + nom2;
+function textUpdate (ParagraphId, remplacementText) {
+    let paragraph = document.getElementById(ParagraphId);
+    paragraph.innerText = remplacementText;
 }
 
+textUpdate("p1","Premier Paragraphe");
+textUpdate("p2","Deuxième paragraphe");
+textUpdate("p3","Troisième paragraphe");
+textUpdate("p4", "Quatrième paragraphe");
+textUpdate("p5", "Cinquième et dernier paragraphe");
